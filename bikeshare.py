@@ -43,7 +43,17 @@ def get_filters():
     return city, month, day
 
 def load_data(city, month, day):
-    """Load data for the specified city and filter by month and day if applicable."""
+    """
+    Loads bikeshare data for the specified city and filters by month and day if applicable.
+
+    Args:
+        city (str): Name of the city to analyze.
+        month (str): Name of the month to filter data (or 'all' for no filter).
+        day (str): Name of the day to filter data (or 'all' for no filter).
+
+    Returns:
+        DataFrame: Filtered data based on user selection.
+    """
     df = pd.read_csv(CITY_DATA[city])
 
     # Convert Start Time column to datetime
