@@ -15,3 +15,6 @@ This project analyzes bikeshare data for different U.S. cities. It allows users 
 ### Credits
 - Pandas documentation for data manipulation techniques
 - Stack Overflow for problem-solving resources
+
+### Tools
+- Colab
